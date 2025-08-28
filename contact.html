@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinity 8</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Contact Section Styling */
+    .contact_section {
+      position: relative;
+      padding: 80px 0;
+      background-color: #f9f9f9;
+      overflow: hidden;
+    }
+
+    .contact_bg_box .img-box img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.15;
+    }
+
+    .contact_section .detail-box h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .contact_section .detail-box p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .contact_section .detail-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact_section .detail-box ul li {
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact_form-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact_form-container input,
+    .contact_form-container textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact_form-container input:focus,
+    .contact_form-container textarea:focus {
+      border-color: #0077b6;
+    }
+
+    .contact_form-container .message_input {
+      height: 120px;
+      resize: none;
+    }
+
+    .contact_form-container .btn-box {
+      text-align: right;
+    }
+
+    .contact_form-container button {
+      background: #0077b6;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact_form-container button:hover {
+      background: #005f87;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact_section .row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contact Section -->
+  <section class="contact_section" id="contact">
+    <div class="contact_bg_box">
+      <div class="img-box">
+        <img src="images/contact-bg.jpg" alt="Contact Background">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about Infinity 8 Cargo or Golden Rocket Myanmar Grocery Store, feel free to reach out to us. We’re here to help!</p>
+            <ul>
+              <li><strong>Address:</strong> Onehub Saigon, Đ. D1, Phường Tân Phú, Thành Phố Thủ Đức, Hồ Chí Minh 70000</li>
+              <li><strong>Phone:</strong> +87932078277</li>
+              <li><strong>Email:</strong> info@infinity8.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="contact_form-container">
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="text" name="subject" placeholder="Subject">
+              <textarea name="message" class="message_input" placeholder="Message" required></textarea>
+              <div class="btn-box">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+</body>
+</html>
