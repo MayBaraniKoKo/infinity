@@ -121,6 +121,106 @@ img {
   transition: color .2s;
 }
 
+/* Section background */
+.service_section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+/* Section heading */
+.service_section .heading_container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service_section .heading_container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service_section .heading_container p {
+  font-size: 16px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Card container */
+.service_section .service_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card box */
+.service_section .box {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.service_section .box:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+}
+
+/* Icon */
+.service_section .box .img-box {
+  margin-bottom: 15px;
+}
+
+.service_section .box .img-box i {
+  font-size: 42px;
+  color: #d4162f;
+}
+
+/* Title */
+.service_section .box .detail-box h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+/* Description */
+.service_section .box .detail-box p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Button */
+.service_section .btn-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.service_section .btn-box .custom-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #d4162f;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.service_section .btn-box .custom-btn:hover {
+  background-color: #a31223;
+}
+
+
+
 /* - Floating & Alignment
 ------------------------------------------------------------- */
 .align-left {
