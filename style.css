@@ -901,6 +901,238 @@ nav#navbar {
   }
 }
 
+/*----- Grocery Section
+--------------------------------------------------------------*/
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Grocery Section Styles */
+        .grocery_section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .grocery_header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .grocery_logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .grocery_title {
+            font-size: 2.0rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .grocery_subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .grocery_content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .grocery_info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .info_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .info_card {
+            background: #fff;
+            padding: 10px;
+            height: auto-fit;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: left;
+            transition: all 0.3s ease;
+            border-left: 4px solid #e63946;
+        }
+        
+        .info_card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .info_card h5 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .info_card i {
+            color: #e63946;
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        .info_card p {
+            margin: 0;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .grocery_carousel {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+        
+        .carousel_container {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        .carousel_slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .carousel_slide.active {
+            opacity: 1;
+        }
+        
+        .carousel_slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel_indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            z-index: 10;
+        }
+        
+        .carousel_indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .carousel_indicator.active {
+            background-color: #fff;
+        }
+        
+        .carousel_controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            padding: 0 20px;
+            z-index: 10;
+        }
+        
+        .carousel_control {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .carousel_control:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .grocery_content {
+                flex-direction: column;
+            }
+            
+            .grocery_info, .grocery_carousel {
+                width: 100%;
+            }
+            
+            .grocery_title {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .grocery_section {
+                padding: 60px 0;
+            }
+            
+            .grocery_title {
+                font-size: 1.8rem;
+            }
+            
+            .grocery_subtitle {
+                font-size: 1rem;
+            }
+            
+            .carousel_container {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .grocery_title {
+                font-size: 1.6rem;
+            }
+            
+            .info_card {
+                padding: 20px;
+            }
+            
+            .carousel_container {
+                height: 250px;
+            }
+        }
+
+--------------------------------------------------------------*/
+
 /*----- Services Section
 --------------------------------------------------------------*/
 .project-style {
